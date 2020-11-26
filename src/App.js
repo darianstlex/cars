@@ -6,12 +6,10 @@ import { Gallery } from './components/Gallery';
 import { Navigation } from './components/Navgation';
 import { RegisterForm } from './components/RegisterForm';
 
-import './App.css';
-
 export const App = () => {
   useEffect(() => {
     try {
-      imagesService.getImages(10);
+      imagesService.getImages(20);
     } catch (e) {
       console.error('Error:', e);
     }
