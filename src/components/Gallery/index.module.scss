@@ -1,0 +1,45 @@
+.grid {
+  display: grid;
+  padding: 16px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+
+  .header {
+    display: flex;
+    margin-bottom: 20px;
+
+    .avatar {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+
+    .text {
+      padding: 10px;
+      text-align: left;
+      font-size: 12px;
+    }
+  }
+
+  .image {
+    height: 40vw;
+  }
+
+  @media screen and (min-width: 640px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+
+    .header .text {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (min-width: 960px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+
+    .header .text {
+      font-size: 16px;
+    }
+  }
+}

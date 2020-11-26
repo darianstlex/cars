@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  > * {
+    align-self: center;
+  }
+  margin: 20px 0;
+}
+
+.range {
+  position: absolute;
+  right: 0;
+}
+
+.input {
+  width: 100%;
+  font-size: 16px;
+  padding: 15px 15px;
+  background-color: white;
+  border: 1px solid #ccc;
+
+  &.textarea {
+    height: 100px;
+    resize: vertical;
+  }
+
+  &:focus {
+    border-color: #4646e3;
+  }
+
+  &:focus.error,
+  &.error {
+    border-color: #bd1919;
+  }
+}
+
+.errorMessage {
+  margin-top: 5px;
+  align-self: flex-start;
+  font-size: 14px;
+  color: #bd1919;
+}
