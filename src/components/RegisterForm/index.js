@@ -34,21 +34,21 @@ export const RegisterForm = () => {
         value={email.value}
         type="text"
         placeholder="Enter your email"
-        onChange={value => setEmail({ ...name, value })}
+        onChange={value => setEmail({ ...email, value })}
         error={email.error}
       />
       <Input
         value={date.value}
         type="text"
         placeholder="Enter your DOB"
-        onChange={value => setDate({ ...name, value })}
+        onChange={value => setDate({ ...date, value })}
         error={date.error}
       />
       <Input
         value={color.value}
         type="text"
         placeholder="Enter your favorite color"
-        onChange={value => setColor({ ...name, value })}
+        onChange={value => setColor({ ...color, value })}
         error={color.error}
       />
       <Input
@@ -57,7 +57,7 @@ export const RegisterForm = () => {
         value={range.value}
         type="range"
         placeholder="Provide your salary"
-        onChange={value => setRange({ ...name, value })}
+        onChange={value => setRange({ ...range, value })}
         error={range.error}
       />
       <button>Submit</button>
